@@ -1,0 +1,14 @@
+.story {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .story {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .story > .sidebar {
+        display: none;
+    }
+} 

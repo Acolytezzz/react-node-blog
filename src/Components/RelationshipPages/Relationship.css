@@ -1,0 +1,173 @@
+.storyPost {
+    flex: 9;
+}
+
+.storyPostWrapper {
+    padding: 20px;
+    padding-right: 0;
+}
+
+.storyPostImg {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.storyPostTitle {
+    text-align: center;
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 32px;
+}
+
+.storyPostEdit {
+    float: right;
+    font-size: 24px;
+}
+
+.storyPostIcon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.storyPostIcon:first-child {
+    color: teal;
+}
+
+.storyPostIcon:last-child {
+    color: tomato;
+}
+
+.storyPostInfo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #b39656;
+    font-family: "Varela Round", sans-serif;
+}
+
+.storyPostDesc {
+    color: #666;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.storyPostDesc::first-letter {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Priya {
+    font-size: 25px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.btnStyledLeft {
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+}
+
+.btnStyled {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.btnStyled:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.btnStyled:active {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+.btnStyled:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.5);
+}
+
+@media (max-width: 768px) {
+    .storyPostTitle {
+        font-size: 28px;
+    }
+
+    .storyPostInfo {
+        font-size: 16px;
+    }
+
+    .storyPostDesc {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .storyPostDesc::first-letter {
+        font-size: 24px;
+    }
+
+    .btnStyled {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .storyPostTitle {
+        font-size: 24px;
+    }
+
+    .storyPostDesc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .storyPostDesc::first-letter {
+        font-size: 20px;
+    }
+
+    .storyPostEdit {
+        font-size: 20px;
+    }
+
+    .storyPostIcon {
+        margin-left: 8px;
+    }
+
+    .storyPostInfo {
+        font-size: 14px;
+    }
+
+    .btnStyled {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .storyPostImg {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+}

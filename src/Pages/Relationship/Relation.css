@@ -1,0 +1,14 @@
+.relation {
+    display: flex;
+}
+
+@media (max-width: 850px) {
+    .relation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .relation > .sidebar {
+        display: none;
+    }
+} 

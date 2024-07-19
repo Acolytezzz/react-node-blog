@@ -1,0 +1,14 @@
+.future {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .future {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .future > .sidebar {
+        display: none;
+    }
+} 
